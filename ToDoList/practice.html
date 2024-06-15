@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>buttons</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/todo.css">
+        <style>
+            .start-Button{
+                padding: 6px;
+                border:2px solid black;
+                border-radius: 20px;
+                width: 100px;
+                color: black;
+                cursor: pointer;
+                transition: all 0.15s ease-in-out;
+                margin-left: 20px;
+            }
+            .start-Button:hover{
+                transform: scale(1.5);
+                color: white;
+                background-color: black;
+                border: none;
+            }
+            .start-Button:active{
+                opacity: 0.3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>PRACTICING JAVASCRIPT</h1>
+        <button class="start-Button js-start-button" onclick="start()">Start</button>
+        <script>
+            function time(){
+                setTimeout(function(){
+                document.querySelector('js-start-button').innerHTML = 'Loading...'
+                },2000)
+            }
+
+            function start(){
+                    time()
+                    document.querySelector('js-start-button').innerHTML = 'Finished'
+                
+            }
+        </script>
+    </body>
+</html>
