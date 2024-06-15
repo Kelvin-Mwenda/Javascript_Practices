@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Amazon Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <Marquee>
+                <h1>Amazon Shipping Calculator</h1>
+            </marquee>
+        </header>
+        <hr>
+
+        <main class="">
+            <div class="">
+                <p> Orders under $40 = +$10 shipping.</p>
+                <p> Orders over $40 = FREE shipping.</p>
+            </div>
+            
+            <div class="">
+                <input type="text" class="js-cost-input" placeholder="Cost of order" onkeydown="handleEnter(event)">
+                <button type="button" class="" onclick="calculateTotal()"> Calculate</button>
+            </div>
+
+            <div class="">
+                <p class="js-total-cost"></p>
+            </div>
+
+            <div>
+                <h1>Submitting Name</h1>
+            </div>
+            <div>
+                <input type="text" class="js-name-input" placeholder="Enter your name" onkeydown="handleSubmit(event)">
+                <button type="button" class="js-name-submit" onclick="submitName()">Submit</button>
+            </div>
+
+            <div class="">
+                <p class="js-name"></p>
+            </div>
+
+        </main>
+
+        <div class="">
+            <h1 class="">YouTube Subscribe Button</h1>
+            <button class="js-subscribe-button subscribe-button" onclick="
+            subscribe()">Subscribe</button>
+        </div>
+
+        <script>
+            function submitName(){
+                const inputElement = document.querySelector('.js-name-input')
+                let name = inputElement.value
+                document.querySelector('.js-name').innerHTML = `Your name is : ${name}`
+            }
+
+            function handleSubmit(event){
+                if(event.key === 'Enter'){
+                    submitName()
+                }
+            }
+
+            function handleEnter(event){
+                if(event.key === 'Enter'){
+                    calculateTotal()
+                }
+            }
+
+            function calculateTotal(){
+                const inputElement = document.querySelector('.js-cost-input')
+                let cost = Number(inputElement.value)
+
+                if(cost < 40){
+                    cost += 10
+                }
+
+                document.querySelector('.js-total-cost').innerHTML = `Total Cost: $${cost}`
+            }
+            
+            function subscribe(){
+                const buttonElement = document.querySelector('.js-subscribe-button')
+
+                if(buttonElement.innerText === 'Subscribe'){
+                    buttonElement.innerHTML = 'Subscribed'
+                    buttonElement.classList.add('is-subscribed-button')
+                }else{
+                    buttonElement.innerHTML = 'Subscribe'
+                    buttonElement.classList.remove('is-subscribed-button')
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>

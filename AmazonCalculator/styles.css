@@ -1,0 +1,27 @@
+.subscribe-button{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+.subscribe-button:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 8px 16px rgb(0,0,0,0.15);
+}
+
+.is-subscribed-button{
+    background-color: rgb(238, 232, 232);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+.is-subscribed-button:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 8px 16px rgb(0,0,0,0.15);
+}
