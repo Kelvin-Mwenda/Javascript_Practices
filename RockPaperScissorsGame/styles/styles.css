@@ -1,0 +1,135 @@
+body{
+    background-image: url('img/logo.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    padding-bottom: 0;
+}
+
+p{
+    font-size:20px;
+    color:black;
+    font-weight:bold;
+}
+hr{
+    height: 10px;
+    background-color: rgb(85, 80, 80);
+    border-radius: 10px;
+}
+
+.image-button{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    background-color: transparent;
+}
+.image-button1{
+    height: 100px;
+    width: 100px;
+    padding: 6px;
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius: 50px;
+}
+.image-button1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: white;
+    border: 2px solid rgb(78, 78, 78);
+}
+
+.title{
+    margin:-20px -20px -8px -20px;
+    padding-top:12px;
+    text-align:center;
+    background-color: rgb(133, 233, 233);
+    height:100px;
+    color: black;
+}
+
+.separator{
+    border:2px solid black;
+    margin:0;
+}
+
+.game-area{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:50px;
+    color: white;
+}
+
+.buttons{
+    margin:10px 0px;
+}
+
+.cs-Button{
+    padding:14px;
+    font-size:16px;
+    font-weight:bold;
+    border:2px solid rgb(128, 128, 128);
+    border-radius:150px;
+    width:100px;
+    margin:0 10px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+.cs-Button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: white;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(80, 78, 78);
+}
+.cs-Button:active{
+    opacity: 0.6;
+}
+.reset-Button{
+    padding:16px;
+    font-size:16px;
+    font-weight:bold;
+    border:2px solid rgb(104, 100, 100);
+    border-radius:50px;
+    width:200px;
+    margin:0 10px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+.reset-Button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: white;
+    background-color: rgb(51, 49, 49);
+    border: 1px solid rgb(4, 193, 250);
+}
+.reset-Button:active{
+    opacity: 0.6;
+}
+
+.results{
+    font-style: normal;
+    color: black;
+}
+
+.reset{
+    margin:10px 0px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/cowsunset.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content1{
+    flex: 1;
+}
+.content1{
+    flex: 1;
+}
