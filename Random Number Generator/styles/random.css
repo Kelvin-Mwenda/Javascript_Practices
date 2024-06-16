@@ -1,0 +1,16 @@
+.button{
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    padding: 6px;
+    color: white;
+    background-color: grey;
+    border: 2px solid green;
+    border-radius: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.labels{
+    font-size: 2em;
+    text-align: center;
+}
